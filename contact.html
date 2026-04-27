@@ -9,8 +9,174 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Allows for icons -->
+    <script src='https://use.fontawesome.com/826a7e3dce.js' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    <!-- Javascript library: jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"><!-- Carousel ajax library -->
+    <script src="nav.js"></script>
+    <!-- Navigation functions -->
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="logo" class="reverse">
+                    <div class="logo"><img src="img/logo.png" alt="Exotic Garden Gallery"></div>
+                    <div class="mobile-btn" onclick="openNav()">&#9776;</div>
+                </div>
+                 <!-- Nav For Desktop -->
+                <!--You can change the links below -->
+                <div id="links">
+                    <a href="index.html">Home</a>
+                    <a href="classes.html">Classes & Events</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Slide Out Nav For Mobile -->
+        <!---Change the links to match the links above -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="classes.html">Classes & Events</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </header>
+    <!-- <div class="hero-homepage">
+        <div>
+            <h1 class="hero-heading">Transform Your Garden into a Living Gallery</h1>
+            <h3 class="hero-subhead">
+                    Curated botanical art and rare specimens for the discerning collector. Healthy, unique exotic plants backed by expert care and a green thumb gaurantee.
+            </h3>
+            <button class="hero-button">Shop Now</button>
+        </div>
+    </div> -->
+    <!-- <main class="backup">
+        <h1 class="con"> Contact Us 
+        <small></small>
+        </h1>
+        <section class="contact-wrap">
+        <form action="" class="contact-form">
+            <div class="col-sm-6">
+            <div class="input-block">
+                <label for="">First Name</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-6">
+            <div class="input-block">
+                <label for="">Last Name</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-12">
+            <div class="input-block">
+                <label for="">Email</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-12">
+            <div class="input-block">
+                <label for="">Message Subject</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-12">
+            <div class="input-block textarea">
+                <label for="">Drop your message here</label>
+                <textarea rows="3" type="text" class="form-control"></textarea>
+            </div>
+            </div>
+            <div class="col-sm-12">
+            <button class="square-button">Send</button>
+            </div>
+        </form>
+        </section>
+        <div class="made-with-love">
+        Made with 
+        <i>♥</i> by 
+        <a target="_blank" href="https://codepen.io/nikhil8krishnan">Nikhil Krishnan</a>
+        </div>
+    </main> -->
+    <main>
+        <section id="contact">
+  
+            <h1 class="section-header">Contact</h1>
+            
+            <div class="contact-wrapper">
+            
+            <!-- Left contact page --> 
+                
+                <form id="contact-form" class="form-horizontal" role="form">
+                
+                <div class="form-group">
+                    <div class="col-sm-12">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                    </div>
+                </div>
+
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <div class="alt-send-button">
+                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                    </div>
+                
+                </button>
+                
+                </form>
+                
+            <!-- Left contact page --> 
+                
+                <div class="direct-contact-container">
+
+                    <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+                    
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+                    
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+                    
+                    </ul>
+
+                    <hr>
+                    <ul class="social-media-list">
+                    <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>       
+                    </ul>
+                    <hr>
+
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
 </body>
 </html>

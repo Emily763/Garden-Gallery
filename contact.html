@@ -115,9 +115,8 @@
             
             <div class="contact-wrapper">
             
-            <!-- Left contact page --> 
-                
-                <form id="contact-form" class="form-horizontal" role="form">
+            <!-- Old Left contact page --> 
+                <!-- <form id="contact-form" class="form-horizontal" role="form">
                 
                 <div class="form-group">
                     <div class="col-sm-12">
@@ -140,9 +139,40 @@
                 
                 </button>
                 
+                </form> -->
+            <!-- Old Left contact page --> 
+            
+            <!-- New Contact Form Left -->
+            <!-- START OF FORM -->
+            <div class="form-container">
+                <form action="thankyou.html">
+                <!--  FORM ACTION will go to a FAKE Thank You page.  --> 
+                    <p> Message us with any questions, tell us about your favorite camping spots, or let us know if you want to host an event. <br>
+                    We love seeing everyone's setup as every campervan is unique, so send us a photo.</p>
+                    <br>
+                    <label>Your Name: <br>
+                    <input type="text" id="name" name="name" required></label>
+
+                    <label>Email: <br>
+                    <input type="email" id="email" name="email" required></label>
+
+                    <label>Message: <br>
+                    <textarea id="message" required></textarea></label>
+
+                    <label id="newsletter"> <input type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters</label>
+
+                    <button type="submit" class="cursor" value="Submit">Submit</button>
+
                 </form>
-                
-            <!-- Left contact page --> 
+            </div> <!-- END OF CONTAINER DIV -->
+            <!-- END OF FORM -->
+
+            <!-- More information on forms see chapter 7 in our HTML AND CSS book.
+
+            Check out W3Schools also: https://www.w3schools.com/howto/howto_css_contact_form.asp
+            -->
+
+            <!-- End New Contact Form Left -->
                 
                 <div class="direct-contact-container">
 
@@ -178,5 +208,35 @@
             
         </section>
     </main>
+    <footer>
+        <div class="footer-wrapper">
+            <p>Copyright &copy; <span id="spanYear"></span>Exotic Garden Gallery</p>
+        
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+
+        </div>
+
+    </footer> 
+
+
+   <script>
+        $('#spanYear').html(new Date().getFullYear());
+   </script>
+   <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            smartspeed:1500,
+            margin: 20,
+            nav: true,
+            navText: [
+                "<i class='fa fa-caret-left'></i>",
+                "<i class='fa fa-caret-right'></i>"
+            ],
+            autoplay: true,
+            autoplayHoverPause: true
+
+        })
+   </script>
 </body>
 </html>

@@ -174,19 +174,37 @@ img{
 }
 
 .review-back, h1{
-  padding: 5px;
+  padding-left: 25px;
+  padding-top: 5px;
+  width: 100%;
 }
 
 .comments{
   background-color: #ffffffd3;
-  max-width: 450px;
-  margin: 0 25px 50px 25px;
+  width: 400px;
+  height: 200px;
+  margin: 0 0px 50px 25px;
   padding: 20px 12px 5px 20px;
 }
 
 .review-back{
   background-color: #7d8e4e;
   width: 100%;
+}
+
+.about-gall{
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.about-img{
+  display: flex;
+  max-height: 400px;
+  padding: 50px;
+}
+
+.about-img, img{
+  padding-right: 25px;
 }
 
 .width-90{
@@ -198,7 +216,7 @@ img{
 main{
   display: block;
   margin: auto;
-  width:90%;
+  padding: 60px;
 }
 
 section{
@@ -413,6 +431,19 @@ footer .fa{
   .comments{
     min-height: 200px;
     min-width: 290px;
+  }
+
+  .about-gall{
+    display: unset;
+  }
+
+  .about-img{
+    padding-left: 0;
+    overflow: scroll;
+  }
+
+  .events, figure{
+    overflow: scroll;
   }
 
 .carousel-track {

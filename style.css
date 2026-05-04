@@ -207,6 +207,11 @@ img{
   padding-right: 25px;
 }
 
+.pink{
+  background-color: #f8e1d4;
+  width: 100vw;
+}
+
 .width-90{
   display: block;
   margin: auto;

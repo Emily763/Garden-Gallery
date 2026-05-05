@@ -1,242 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exotic Garden Gallery</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Allows for icons -->
-    <script src='https://use.fontawesome.com/826a7e3dce.js' crossorigin='anonymous'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
-    <!-- Javascript library: jquery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"><!-- Carousel ajax library -->
-    <script src="nav.js"></script>
-    <!-- Navigation functions -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="navbar">
-                <div id="logo" class="reverse">
-                    <div class="logo"><img src="img/logo.png" alt="Exotic Garden Gallery"></div>
-                    <div class="mobile-btn" onclick="openNav()">&#9776;</div>
-                </div>
-                 <!-- Nav For Desktop -->
-                <!--You can change the links below -->
-                <div id="links">
-                    <a href="index.html">Home</a>
-                    <a href="classes.html">Classes & Events</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-            </div>
-        </nav>
-        <!-- Slide Out Nav For Mobile -->
-        <!---Change the links to match the links above -->
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="classes.html">Classes & Events</a>
-            <a href="shop.html">Shop</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-    </header>
-    <!-- <div class="hero-homepage">
-        <div>
-            <h1 class="hero-heading">Transform Your Garden into a Living Gallery</h1>
-            <h3 class="hero-subhead">
-                    Curated botanical art and rare specimens for the discerning collector. Healthy, unique exotic plants backed by expert care and a green thumb gaurantee.
-            </h3>
-            <button class="hero-button">Shop Now</button>
-        </div>
-    </div> -->
-    <!-- <main class="backup">
-        <h1 class="con"> Contact Us 
-        <small></small>
-        </h1>
-        <section class="contact-wrap">
-        <form action="" class="contact-form">
-            <div class="col-sm-6">
-            <div class="input-block">
-                <label for="">First Name</label>
-                <input type="text" class="form-control">
-            </div>
-            </div>
-            <div class="col-sm-6">
-            <div class="input-block">
-                <label for="">Last Name</label>
-                <input type="text" class="form-control">
-            </div>
-            </div>
-            <div class="col-sm-12">
-            <div class="input-block">
-                <label for="">Email</label>
-                <input type="text" class="form-control">
-            </div>
-            </div>
-            <div class="col-sm-12">
-            <div class="input-block">
-                <label for="">Message Subject</label>
-                <input type="text" class="form-control">
-            </div>
-            </div>
-            <div class="col-sm-12">
-            <div class="input-block textarea">
-                <label for="">Drop your message here</label>
-                <textarea rows="3" type="text" class="form-control"></textarea>
-            </div>
-            </div>
-            <div class="col-sm-12">
-            <button class="square-button">Send</button>
-            </div>
-        </form>
-        </section>
-        <div class="made-with-love">
-        Made with 
-        <i>♥</i> by 
-        <a target="_blank" href="https://codepen.io/nikhil8krishnan">Nikhil Krishnan</a>
-        </div>
-    </main> -->
-    <main>
-        <section id="contact">
+    <header class="site-header">
   
-            <h1 class="section-header">Contact</h1>
-            
-            <div class="contact-wrapper">
-            
-            <!-- Old Left contact page --> 
-                <!-- <form id="contact-form" class="form-horizontal" role="form">
-                
-                <div class="form-group">
-                    <div class="col-sm-12">
-                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                    </div>
-                </div>
+  <!-- LOGO -->
+  <a href="index.html">
+    <img src="img/logo.png" alt="Logo" class="logo-img">
+  </a>
 
-                <div class="form-group">
-                    <div class="col-sm-12">
-                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                    </div>
-                </div>
+  <!-- MOBILE BUTTON -->
+  <button class="menu-btn" onclick="openMenu()">☰</button>
 
-                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-                
-                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                    <div class="alt-send-button">
-                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                    </div>
-                
-                </button>
-                
-                </form> -->
-            <!-- Old Left contact page --> 
-            
-            <!-- New Contact Form Left -->
-            <!-- START OF FORM -->
-            <div class="form-container">
-                <form action="thankyou.html">
-                <!--  FORM ACTION will go to a FAKE Thank You page.  --> 
-                    <p> Message us with any questions, tell us about your favorite camping spots, or let us know if you want to host an event. <br>
-                    We love seeing everyone's setup as every campervan is unique, so send us a photo.</p>
-                    <br>
-                    <label>Your Name: <br>
-                    <input type="text" id="name" name="name" required></label>
+  <!-- NAV LINKS -->
+  <nav class="main-nav" id="mainNav">
+    <button class="close-btn" onclick="closeMenu()">×</button>
 
-                    <label>Email: <br>
-                    <input type="email" id="email" name="email" required></label>
+    <a href="index.html">Home</a>
+    <a href="classes.html">Classes & Events</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-                    <label>Message: <br>
-                    <textarea id="message" required></textarea></label>
+</header>
+   <section class="contact-section">
+  <div class="contact-container">
 
-                    <label id="newsletter"> <input type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters</label>
+    <!-- LEFT: FORM -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
 
-                    <button type="submit" class="cursor" value="Submit">Submit</button>
+      <form id="contact-form">
+        <label>Name</label>
+        <input type="text" name="name" required>
 
-                </form>
-            </div> <!-- END OF CONTAINER DIV -->
-            <!-- END OF FORM -->
+        <label>Email</label>
+        <input type="email" name="email" required>
 
-            <!-- More information on forms see chapter 7 in our HTML AND CSS book.
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
 
-            Check out W3Schools also: https://www.w3schools.com/howto/howto_css_contact_form.asp
-            -->
+        <label>Message</label>
+        <textarea name="message" rows="4" required></textarea>
 
-            <!-- End New Contact Form Left -->
-                
-                <div class="direct-contact-container">
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
 
-                    <ul class="contact-list">
-                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
-                    
-                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-                    
-                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
-                    
-                    </ul>
+    <!-- RIGHT: INFO -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
 
-                    <hr>
-                    <ul class="social-media-list">
-                    <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>       
-                    </ul>
-                    <hr>
+      <p>
+        📞 <a href="tel:+15025551234">(502) 555-1234</a>
+      </p>
 
-                </div>
-                
-            </div>
-            
-        </section>
-    </main>
-    <footer>
-        <div class="footer-wrapper">
-            <p>Copyright &copy; <span id="spanYear"></span>Exotic Garden Gallery</p>
-        
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
+      <p>
+        ✉️ <a href="mailto:info@garden.com">info@garden.com</a>
+      </p>
 
-        </div>
+      <p>
+        📍 <a href="https://maps.google.com" target="_blank">
+          123 Garden Street, Louisville, KY
+        </a>
+      </p>
+    </div>
 
-    </footer> 
+  </div>
+</section>
 
+<footer class="site-footer">
+    <img src="img/logo.png" alt="Exotic Garden Gallery logo" class="footer-logo" />
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="classes.html">Classes & Events</a>
+      <a href="shop.html">Shop</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </footer>
 
-   <script>
-        $('#spanYear').html(new Date().getFullYear());
-   </script>
-   <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            smartspeed:1500,
-            margin: 20,
-            nav: true,
-            navText: [
-                "<i class='fa fa-caret-left'></i>",
-                "<i class='fa fa-caret-right'></i>"
-            ],
-            autoplay: true,
-            autoplayHoverPause: true
-
-        })
-   </script>
+  <script src="nav.js"></script>
 </body>
 </html>

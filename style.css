@@ -1,12 +1,13 @@
 .grid-container {
   display: grid;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: #f8dfd1;
   padding: 10px;
 }
 .one {
   grid-template-columns: auto;
 }
+
 .two {
   grid-template-columns: auto auto;
 }
@@ -16,11 +17,42 @@
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
+
+.display{
+  display: flex;
+  height: 500px;
+}
+
+.display, p{
+  text-align: left;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.display, h3{
+  padding-left: 20px;
+  text-align: left;
+}
+
+.small-desc{
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.classes{
+  background-image: url(img/GuyWorking.jpg) !important;
+}
+
+.classes, h1{
+  color: #fff;
+}
+
 
 
 
@@ -44,6 +76,7 @@
 .contact-form{
   background-color: #f8dfd1;
   padding: 45px;
+  height: 950px;
 }
 
 .contact-form h2 {
@@ -104,6 +137,12 @@
   .contact-container {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .display{
+    display: unset;
+  }
+  .grid-container{
+    display: unset;
   }
 }
 
@@ -241,6 +280,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', serif;
+  font-family: 16px;
   color: #111;
   background: #fff;
   overflow-x: hidden;
@@ -326,7 +366,8 @@ a { color: inherit; text-decoration: none; }
 }
 .section h2 { 
   font-size: clamp(2rem, 4vw, 3.5rem); 
-  line-height: 1; margin: 0 0 24px; 
+  line-height: 1.5; 
+  margin: 0 0 24px; 
   font-weight: 500; 
 }
 .event-grid { 
@@ -340,7 +381,7 @@ a { color: inherit; text-decoration: none; }
   object-fit: cover; 
 }
 .event-card p, .product-card p { 
-  font-size: 12px; 
+  font-size: 16px; 
   line-height: 1.35; 
   margin: 10px 0 0; 
 }
@@ -420,6 +461,7 @@ a { color: inherit; text-decoration: none; }
 .reviews-section { 
   background: #7d8e4e; 
   color: #fff; 
+  height: 450px;
 }
 .review-grid { 
   display: grid; 
@@ -455,6 +497,7 @@ a { color: inherit; text-decoration: none; }
 .signup-section h2 { 
   font-size: clamp(1.8rem, 3vw, 2.6rem); 
   font-weight: 700; 
+  padding-top: 20px;
 }
 .signup-form { 
   width: min(560px, 100%); 

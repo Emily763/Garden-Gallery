@@ -38,3 +38,5 @@ function openMenu() {
 function closeMenu() {
   document.getElementById("mainNav").classList.remove("open");
 }
+
+document.getElementById("year").textContent = new Date().getFullYear();

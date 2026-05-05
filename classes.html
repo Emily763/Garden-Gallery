@@ -7,37 +7,23 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="navbar">
-                <div id="logo" class="reverse">
-                    <div class="logo"><img src="img/logo.png" alt="Exotic Garden Gallery"></div>
-                    <div class="mobile-btn" onclick="openNav()">&#9776;</div>
-                </div>
-                 <!-- Nav For Desktop -->
-                <!--You can change the links below -->
-                <div id="links">
-                    <a href="index.html">Home</a>
-                    <a href="classes.html">Classes & Events</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-            </div>
+    <header class="site-header">
+        <a href="index.html" class="logo-link" aria-label="Exotic Garden Gallery Home">
+        <img src="img/logo.png" alt="Exotic Garden Gallery logo" class="logo-img" />
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">×</button>
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes & Events</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
         </nav>
-        <!-- Slide Out Nav For Mobile -->
-        <!---Change the links to match the links above -->
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="classes.html">Classes & Events</a>
-            <a href="shop.html">Shop</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-    </header>
+  </header>
     <main>
         <div class="grid-container two">
             <div class="item1">
@@ -65,35 +51,19 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer-wrapper">
-            <p>Copyright &copy; <span id="spanYear"></span>Exotic Garden Gallery</p>
-        
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
+    <footer class="site-footer">
+    <img src="img/logo.png" alt="Exotic Garden Gallery logo" class="footer-logo" />
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="classes.html">Classes & Events</a>
+      <a href="shop.html">Shop</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <p>© <span id="year"></span> Exotic Garden Gallery</p>
+  </footer>
 
-        </div>
-
-    </footer> 
-
-
-   <script>
-        $('#spanYear').html(new Date().getFullYear());
-   </script>
-   <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            smartspeed:1500,
-            margin: 20,
-            nav: true,
-            navText: [
-                "<i class='fa fa-caret-left'></i>",
-                "<i class='fa fa-caret-right'></i>"
-            ],
-            autoplay: true,
-            autoplayHoverPause: true
-
-        })
-   </script>
+   <script src="nav.js"></script>
 </body>
 </html>

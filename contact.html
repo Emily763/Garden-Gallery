@@ -8,27 +8,22 @@
 </head>
 <body>
     <header class="site-header">
-  
-  <!-- LOGO -->
-  <a href="index.html">
-    <img src="img/logo.png" alt="Logo" class="logo-img">
-  </a>
+        <a href="index.html" class="logo-link" aria-label="Exotic Garden Gallery Home">
+        <img src="img/logo.png" alt="Exotic Garden Gallery logo" class="logo-img" />
+        </a>
 
-  <!-- MOBILE BUTTON -->
-  <button class="menu-btn" onclick="openMenu()">☰</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
 
-  <!-- NAV LINKS -->
-  <nav class="main-nav" id="mainNav">
-    <button class="close-btn" onclick="closeMenu()">×</button>
-
-    <a href="index.html">Home</a>
-    <a href="classes.html">Classes & Events</a>
-    <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-</header>
+        <nav class="main-nav" id="mainNav">
+        <button class="close-btn" id="closeBtn" aria-label="Close menu">×</button>
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes & Events</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        </nav>
+  </header>
    <section class="contact-section">
   <div class="contact-container">
 
@@ -58,16 +53,16 @@
       <h2>Get in Touch</h2>
 
       <p>
-        📞 <a href="tel:+15025551234">(502) 555-1234</a>
+        📞 <a href="tel:+15025551234">(502) 555-6872</a>
       </p>
 
       <p>
-        ✉️ <a href="mailto:info@garden.com">info@garden.com</a>
+        ✉️ <a href="mailto:gardengallery@gmail.com">gardengallery@gmail.com</a>
       </p>
 
       <p>
         📍 <a href="https://maps.google.com" target="_blank">
-          123 Garden Street, Louisville, KY
+          1429 East Willow St, Louisville, KY, 40243
         </a>
       </p>
     </div>
@@ -85,7 +80,12 @@
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact Us</a>
     </nav>
+    <p>© <span id="year"></span> Exotic Garden Gallery</p>
   </footer>
+
+   <script>
+        $('#spanYear').html(new Date().getFullYear());
+    </script>
 
   <script src="nav.js"></script>
 </body>

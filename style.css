@@ -1,3 +1,33 @@
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.one {
+  grid-template-columns: auto;
+}
+.two {
+  grid-template-columns: auto auto;
+}
+
+.three {
+  grid-template-columns: auto auto auto;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
 /* ===== CONTACT SECTION ===== */
 .contact-section {
   padding: 60px 8%;
@@ -11,6 +41,11 @@
 }
 
 /* LEFT FORM */
+.contact-form{
+  background-color: #f8dfd1;
+  padding: 45px;
+}
+
 .contact-form h2 {
   margin-bottom: 20px;
 }
